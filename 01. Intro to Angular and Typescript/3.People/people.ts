@@ -31,6 +31,7 @@ export class Junior extends Employee{
         super(name, age);
         this.tasks.push("working on a complicated task.");
     }
+    //tasks: string[] = [`working on a complicated task.`];
 }
 
 export class Senior extends Employee{
@@ -40,6 +41,7 @@ export class Senior extends Employee{
         this.tasks.push("taking time off.");
         this.tasks.push("is supervising junior workers.");
     }
+    //tasks: string[] = [`working on a complicated task.`, `taking time off`, `is supervising junior workers`];
 }
 
 export class Manager extends Employee{
@@ -48,8 +50,10 @@ export class Manager extends Employee{
         super(name, age);
         this.divident = 0;
         this.tasks.push("scheduled a meeting.");
-        this.tasks.push("preparing a quarterly meeting.");
+        this.tasks.push("preparing a quarterly report.");
     }
+
+    //tasks: string[] = [`scheduled a meeting.`, `preparing a quarterly report.`];
 
     public getSalary(): number{
         return this.salary + this.divident;
