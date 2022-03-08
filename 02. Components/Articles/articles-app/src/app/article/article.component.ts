@@ -46,7 +46,7 @@ export class ArticleComponent implements OnInit {
 
   toggleImage(): void {
     this.imageIsShown = !this.imageIsShown; // = !this.imageIsShown? true : false;
-    this.imageButtonTitle = this.imageButtonTitle === "Show image" ? "Hide Image" : "Show image";
+    this.imageButtonTitle = this.imageIsShown ? "Hide Image" : "Show image";
     
   }
 }
