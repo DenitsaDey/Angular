@@ -1,0 +1,9 @@
+<div class="theme-title" *ngIf="themeList">
+
+    <!-- theme component  -->
+    
+    <app-theme-list-item *ngFor="let theme of themeList" [theme] = "theme"></app-theme-list-item>
+</div>
+<div class="theme-title" *ngIf="!themeList">
+    Loading...
+</div>

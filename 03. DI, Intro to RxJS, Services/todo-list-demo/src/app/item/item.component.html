@@ -1,0 +1,3 @@
+<span>{{toDoItem.title}} : {{toDoItem.isCompleted? 'Done' : 'Pending' }}</span>
+<button (click)="handleStatusChange(toDoItem)">{{toDoItem.isCompleted? 'Mark as pending' : 'Mark as completed'}}</button>
+<span> Changed on: {{displayTime()}}</span>

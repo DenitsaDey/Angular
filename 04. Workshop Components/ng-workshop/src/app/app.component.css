@@ -1,0 +1,7 @@
+:ng g s userhost{
+    display: flex;
+    justify-content:space-around;
+}
+main {
+    width: 50%;
+}

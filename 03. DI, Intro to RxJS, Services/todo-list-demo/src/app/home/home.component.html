@@ -1,0 +1,6 @@
+<button (click)="markAll()">{{buttonLabel()}}</button>
+
+<div *ngFor="let item of toDoList">
+    <todo-list-app-item [toDoItem] = "item"></todo-list-app-item>
+ 
+</div>
